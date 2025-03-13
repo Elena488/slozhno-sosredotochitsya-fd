@@ -9,8 +9,22 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --h2-color: #FFC2E6;
+  --text-bg-color: #FF8DCB; /*цвет фона для выделения текста*/
+  --text-color: #353430;
+  --text-color-accent: #353430;
+  --h3-color-accent: #353430;
+  --h3-color: #353430; /*цветпервого заголовка без выделения фона*/
+  --button-text-color: #353430;
+  --bg-image: url(../images/cover-image-light.png);
+  --link-hover-color: rgba(50, 49, 45, 0.40);
+  --link-focus-color: #353430;
+  --decoration-color: #353430;
+  --decor-visibility: hidden;
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  background-image: var(--bg-image), url(../images/cover-image-light.png);
 }
+

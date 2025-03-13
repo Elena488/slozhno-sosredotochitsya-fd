@@ -2,3 +2,41 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --h2-small-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --bold-font-weight: 700;
+  --normal-font-weight: 400;
+  --h2-line-height: 82.5%;
+  --text-line-height: 23.4px;
+  --page-font-family: "IBM Plex Mono";
+  --page-font-style: normal;
+  --button-line-height: 18px;
+  --text-size: 18px;
+  --bg-image: url(../images/cover-image-light.png);
+  
+
+
+  --small-padding: 10px 10px;
+  --header-magrin-bstart: clamp(4.15625rem, -2.2846rem + 27.4809vw, 10.90625rem);
+  --header-magrin-bend: clamp(3.5rem, -2.8812rem + 27.2265vw, 10.1875rem);
+  --subtitle-margin: 20px;
+  --text-margin: 10px;
+  --footer-padding-inline:
+  --footer-padding-block: 
+
+}
+
+@media (1024px > width >= 768px) {
+  :root {
+    --small-padding: 20px 20px;
+  }
+}
+
+@media ( width >= 1024px) and (orientation: landscape) {
+  :root {
+      --small-padding: 20px 20px;
+      --h2-small-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+      --header-magrin-bstart: clamp(10.875rem, -7.9688rem + 39.2578vw, 17.15625rem);
+      --header-magrin-bend: clamp(7.125rem, 19.375rem + -19.1406vw, 10.1875rem);
+  }
+}

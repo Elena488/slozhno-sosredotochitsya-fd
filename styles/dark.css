@@ -3,7 +3,6 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 :root.theme-dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -22,7 +21,6 @@
   --link-focus-color: #FF0070;
   --decoration-color: #FF0070;
   --decor-visibility: visible;
-
 }
 
 .theme-dark .page {
@@ -30,13 +28,13 @@
   background-image: var(--bg-image), url(../images/cover-image-dark.png);
 } 
 
-.main {
+.theme-dark .main {
   background-image: none;
   background-color: #000028;
   background-attachment: fixed;
 }
 
-.footer {
+.theme-dark .footer {
   background-image: none;
   background-color: #000028;
   background-attachment: fixed;

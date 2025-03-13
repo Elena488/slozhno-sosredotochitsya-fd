@@ -19,9 +19,18 @@
 .decor__elem {
   display: flex;
   position: absolute;
-  right: 10px;
+  right: 19px;
+  gap: 10px;
   align-items: center;
   visibility: var(--decor-visibility, hidden);
+}
+
+.circle {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--decoration-color, #353430);
+  box-shadow: 0px 0px 4px #FF0070;
 }
 
 .decor__text {
@@ -232,7 +241,7 @@
   }
 
   .decor__elem {
-    right: 20px;
+    right: 29px;
     align-items: center;
     visibility: var(--decor-visibility, hidden);
   }
@@ -387,7 +396,7 @@
   }
 
   .decor__elem {
-    right: 20px;
+    right: 29px;
     align-items: center;
     visibility: var(--decor-visibility, hidden);
   }

@@ -13,7 +13,7 @@
   --button-line-height: 18px;
   --text-size: 18px;
   --bg-image: url(../images/cover-image-light.png);
-  
+
 
 
   --small-padding: 10px 10px;
@@ -21,9 +21,6 @@
   --header-magrin-bend: clamp(3.5rem, -2.8812rem + 27.2265vw, 10.1875rem);
   --subtitle-margin: 20px;
   --text-margin: 10px;
-  --footer-padding-inline:
-  --footer-padding-block: 
-
 }
 
 @media (1024px > width >= 768px) {

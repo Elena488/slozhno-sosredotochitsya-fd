@@ -30,6 +30,17 @@
   background-image: var(--bg-image), url(../images/cover-image-dark.png);
 } 
 
+.main {
+  background-image: none;
+  background-color: #000028;
+  background-attachment: fixed;
+}
+
+.footer {
+  background-image: none;
+  background-color: #000028;
+  background-attachment: fixed;
+}
 
 
 

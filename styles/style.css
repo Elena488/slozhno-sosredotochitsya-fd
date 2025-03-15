@@ -221,12 +221,10 @@
 .footer {
   background-image: none;
   background-color: #FFF1F7;
+  height: 100vh;
+  width: 100vw;
   min-height: 668px;
   position: relative;
-  padding-inline-start: clamp(0.8125rem, -10.5782rem + 48.6005vw, 12.75rem);
-  padding-inline-end: clamp(0.8125rem, -10.5782rem + 48.6005vw, 12.75rem);
-  padding-block-start: clamp(17.875rem, 7.3192rem + 45.0382vw, 28.9375rem);
-  padding-block-end: clamp(17.875rem, 7.3192rem + 45.0382vw, 28.9375rem);
 }
 
 @media (1024px > width >= 768px) {
@@ -297,8 +295,7 @@
   }
 
   .content__concentration {
-    grid-template-rows: min-content min-content min-content min-content;
-    
+    grid-template-rows: min-content min-content min-content min-content; 
   }
 
   .content__concentration-subtitle {
@@ -325,7 +322,6 @@
     max-width: unset;
     justify-self: center;
   }
-  
 
   .content__pictures-subtitle {
     grid-row: 1;
@@ -355,7 +351,6 @@
     height: 100%;
     overflow: hidden;
   }
-
   
   .content__picture-books {
     width: 100%;
@@ -372,7 +367,16 @@
   }
 
   .footer {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .footer__content {
     justify-self: center;
+    align-self: center;
   }
 }
 
@@ -497,7 +501,6 @@
     max-width: unset;
     justify-self: center;
   }
-  
 
   .content__pictures-subtitle {
     grid-row: 1;
@@ -543,11 +546,16 @@
   }
 
   .footer {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .footer__content {
     justify-self: center;
-    padding-inline-start: clamp(12.75rem, -0.75rem + 28.125vw, 17.25rem);
-    padding-inline-end: clamp(12.75rem, -0.75rem + 28.125vw, 17.25rem);
-    padding-block-start: clamp(19.9375rem, 55.9375rem + -56.25vw, 28.9375rem);
-    padding-block-end: clamp(19.9375rem, 55.9375rem + -56.25vw, 28.9375rem);
+    align-self: center;
   }
 }
 
@@ -560,6 +568,7 @@
     border-bottom: 1px solid var(--button-text-color, #353430);
     outline: none;
   }
+
   .link:hover {
     border-bottom: 1px solid var(--button-text-color, #353430);
   }

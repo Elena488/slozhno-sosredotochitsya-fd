@@ -295,7 +295,7 @@
   }
 
   .content__concentration {
-    grid-template-rows: min-content min-content min-content min-content; 
+    grid-template-rows: min-content min-content min-content min-content;
   }
 
   .content__concentration-subtitle {

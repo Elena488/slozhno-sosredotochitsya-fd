@@ -18,10 +18,12 @@
 
   --small-padding: 10px 10px;
   --header-magrin-bstart: clamp(4.15625rem, -2.2846rem + 27.4809vw, 10.90625rem);
-  --header-magrin-bend: clamp(3.5rem, -2.8812rem + 27.2265vw, 10.1875rem);
+  --header-magrin-bend: clamp(2.875rem, -4.1026rem + 29.771vw, 10.1875rem);
   --subtitle-margin: 20px;
   --text-margin: 10px;
 }
+
+
 
 @media (1024px > width >= 768px) {
   :root {

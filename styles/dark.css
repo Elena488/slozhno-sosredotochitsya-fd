@@ -23,20 +23,18 @@
   --decor-visibility: visible;
 }
 
-.theme-dark .page {
+.theme-dark .header {
   /* Вам также нужно будет написать ряд подобных селекторов */
   background-image: var(--bg-image), url(../images/cover-image-dark.png);
   background-attachment: fixed;
 } 
 
 .theme-dark .main {
-  background-image: none;
   background-color: #000028;
   background-attachment: fixed;
 }
 
 .theme-dark .footer {
-  background-image: none;
   background-color: #000028;
   background-attachment: fixed;
 

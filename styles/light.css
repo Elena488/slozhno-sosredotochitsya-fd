@@ -23,7 +23,7 @@
   --decor-visibility: hidden;
 }
 
-.theme-light .page {
+.theme-light .header {
   /* Вам также нужно будет написать ряд подобных селекторов */
   background-image: var(--bg-image), url(../images/cover-image-light.png);
 }

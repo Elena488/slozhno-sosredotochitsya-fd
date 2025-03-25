@@ -1,18 +1,22 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 .page {
+  opacity: var(--bg-opacity);
   margin: 0;
+  background-image: var(--bg-image), url(../images/cover-image-light.png);
+  background-position: top center;
+  background-color: #FFF1F7;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height:100%;
 }
 
 .header {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: var(--bg-image), url(../images/cover-image-light.png);
-
   padding: var(--small-padding);
   position: relative;
-  min-height: 668px;
+  min-height: min-content;
+  height: 100vh; 
 }
 
 .decor__elem {
@@ -142,8 +146,7 @@
 
 .main {
   --small-padding: 40px 10px;
-  background-image: none;
-  background-color: #FFF1F7;
+  position: relative;
   padding: var(--small-padding);
 }
 
@@ -219,12 +222,18 @@
 }
 
 .footer {
-  background-image: none;
-  background-color: #FFF1F7;
-  height: 100vh;
   width: 100vw;
-  min-height: 668px;
+  min-height: min-content;
+  height: 100vh; 
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.footer__content {
+  justify-self: center;
+  align-self: center;
 }
 
 @media (1024px > width >= 768px) {
@@ -459,8 +468,14 @@
   }
 
   .content__concentration {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
+    column-gap: 20px;
+  }
+
+  .content__concentration-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
   }
 

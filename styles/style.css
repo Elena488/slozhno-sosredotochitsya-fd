@@ -16,7 +16,7 @@
   padding: var(--small-padding);
   position: relative;
   min-height: min-content;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .decor__elem {
@@ -224,7 +224,7 @@
 .footer {
   width: 100vw;
   min-height: min-content;
-  height: 100vh; 
+  height: 100vh;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
